@@ -19,7 +19,7 @@
 	$config['sqlUser'] = 'root';
 
 	// phpmyadmin password for OT server:
-	$config['sqlPassword'] = '256561Oli284953Oli';
+	$config['sqlPassword'] = '';
 
 	// The database name to connect to. (This is usually same as username).
 	$config['sqlDatabase'] = 'eviloria';
