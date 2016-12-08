@@ -48,7 +48,7 @@ foreach ($tasks as $task) {
 	echo '<td>' . $task['kills'] . '</td>';
 	$reward_str = '';
 	foreach ($task['reward'] as $reward) {
-		if $reward_str == '' {
+		if ($reward_str == '') {
 			$reward_str = $reward;
 		} else {
 			$reward_str = $reward_str . '<br>' . $reward;
