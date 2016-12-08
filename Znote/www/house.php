@@ -11,7 +11,7 @@ if ($house !== false && $config['TFSVersion'] === 'OTH') {
 	if ($house['owner'] > 0) $house['ownername'] = user_name($house['owner']);
 
 	//data_dump($house, false, "Data");
-
+	/*
 	//////////////////////
 	// Bid on house logic
 	$bid_char = &$_POST['char'];
@@ -81,7 +81,7 @@ if ($house !== false && $config['TFSVersion'] === 'OTH') {
 			} else echo "<b><font color='red'>You cannot have more houses.</font></b>";
 		} else echo "<b><font color='red'>You need premium account to purchase houses.</font></b>";
 	}
-
+	*/
 	// HTML structure and logic
 	?>
 	<h1>House: <?php echo $house['name']; ?></h1>
@@ -95,11 +95,13 @@ if ($house !== false && $config['TFSVersion'] === 'OTH') {
 		<li><b>Beds</b>: <?php echo $house['beds']; ?></li>
 		<li><b>Owner</b>: <?php
 		if ($house['owner'] > 0) echo "<a href='characterprofile.php?name=". $house['ownername'] ."' target='_BLANK'>". $house['ownername'] ."</a>";
-		else echo "Available for auction.";
+		else echo "Available for ingame purchase.";
 		?></li>
 		<li><b>Rent</b>: <?php echo $house['rent']; ?></li>
 	</ul>
+
 	<?php
+	/*
 	// AUCTION MARKUP INIT
 	if ($house['owner'] == 0) {
 		?>
@@ -140,6 +142,7 @@ if ($house !== false && $config['TFSVersion'] === 'OTH') {
 			} else echo "<br>You need to login before you can bid on houses.";
 		} else echo "<br><b>Bid has ended! House transaction will proceed next server restart assuming active bidder have sufficient balance.</b>";
 	}
+	*/
 } else {
 	?>
 	<h1>No house selected.</h1>
