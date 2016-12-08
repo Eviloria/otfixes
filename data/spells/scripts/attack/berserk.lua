@@ -2,6 +2,7 @@ local combat = createCombatObject()
 setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat, COMBAT_PARAM_BLOCKARMOR, 1)
 setCombatParam(combat, COMBAT_PARAM_EFFECT, CONST_ME_HITAREA)
+setCombatParam(combat, COMBAT_PARAM_TARGETCASTERORTOPMOST, 1)
 
 local area = createCombatArea(AREA_SQUARE1X1)
 setCombatArea(combat, area)

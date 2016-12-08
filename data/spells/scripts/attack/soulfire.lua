@@ -2,6 +2,7 @@ local combat = createCombatObject()
 setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_FIREDAMAGE)
 setCombatParam(combat, COMBAT_PARAM_EFFECT, CONST_ME_FIREAREA)
 setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_FIRE)
+setCombatParam(combat, COMBAT_PARAM_TARGETCASTERORTOPMOST, 1)
 
 local condition = createConditionObject(CONDITION_FIRE)
 setConditionParam(condition, CONDITION_PARAM_DELAYED, 1)
