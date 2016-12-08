@@ -25,7 +25,18 @@ $stages = [
 	],
 ];
 
-var_dump($stages);
+//var_dump($stages);
 ?>
+<table>
+	<tr>
+		<th>From Level</th>
+		<th>To Level</th>
+		<th>Rate</th>
+	</tr>
+	<?php
+	foreach ($stages as $stage) {
+		echo '<tr><td>' .. $stage['from'] .. '</td><td>' .. $stage['to'] .. '</td><td>' .. $stage['rate'] .. 'x</td></tr>';
+	}?>
+</table>
 
 <?php include 'layout/overall/footer.php'; ?>
