@@ -35,7 +35,7 @@ $stages = [
 	</tr>
 	<?php
 	foreach ($stages as $stage) {
-		echo '<tr><td>' .. $stage['from'] .. '</td><td>' .. $stage['to'] .. '</td><td>' .. $stage['rate'] .. 'x</td></tr>';
+		echo '<tr><td>' . $stage['from'] . '</td><td>' . $stage['to'] . '</td><td>' . $stage['rate'] . 'x</td></tr>';
 	}?>
 </table>
 
