@@ -27,4 +27,5 @@
 if (isset($_GET['vocation'])) {
 	echo $_GET['vocation'] . ' chosen.';
 }
+echo $_GET['vocation'];
 ?>
