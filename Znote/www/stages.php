@@ -1,6 +1,6 @@
 <?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
 
-<h4>Experience Stages</h4>
+<h3>Experience Stages</h3>
 <?php
 $stages = [
 	1 => [
@@ -27,7 +27,7 @@ $stages = [
 
 //var_dump($stages);
 ?>
-<table>
+<table class="table table-striped table-hover">
 	<tr>
 		<th>From Level</th>
 		<th>To Level</th>
