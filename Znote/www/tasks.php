@@ -42,7 +42,7 @@ $tasks = [
 	</tr>
 <?php
 foreach ($tasks as $task) {
-	echo '<tr>';
+	echo '<tr style="align: center">';
 	echo '<td><img src="layout/images/monsters/' . $task['img'] . '.gif"/></td>';
 	echo '<td>' . $task['name'] . '</td>';
 	echo '<td>' . $task['kills'] . '</td>';
