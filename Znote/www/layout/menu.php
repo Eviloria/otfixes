@@ -15,7 +15,6 @@
 								<ul class="dropdown-menu">
 									<li><a href="serverinfo.php">Server Information</a></li>
 									<li><a href="spells.php">Spells</a></li>
-					  			    <li><a href="experiencetable.php">Experience Table</a></li>
 									<li><a href="stages.php">Experience Stages</a></li>
 									<li><a href="quests.php">Quests</a></li>
 									<li><a href="tasks.php">Tasks</a></li>
