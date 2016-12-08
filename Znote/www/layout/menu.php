@@ -66,7 +66,7 @@
 							<?PHP } else { ?>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Account Management<b class="caret"></b></a>
-									<ul class="dropdown-menu"							
+									<ul class="dropdown-menu">							
 										<li><a href="myaccount.php">My Account</a></li>
 										<li><a href="createcharacter.php">Create Character</a></li>
 										<li><a href="changepassword.php">Change Password</a></li>
