@@ -76,8 +76,8 @@ function useRope(cid, item, frompos, item2, topos)
     local newPos = {x = topos.x, y = topos.y, z = topos.z, stackpos = 0}
     local groundItem = getThingfromPos(newPos)
     if (isInArray(ROPE_SPOT, groundItem.itemid) ) then
-        local newPos = {x = topos.x, y = topos.y, z = topos.z, stackpos = 256}
-        if getThingFromPos(newPos).uid == 0 then
+        local newPos = {x = topos.x, y = topos.y, z = topos.z, stackpos = 1}
+        if getThingFromPos(newPos).itemid == 0 then
             newPos.y = newPos.y + 1
             newPos.z = newPos.z - 1
             newPos.stackpos = 0
