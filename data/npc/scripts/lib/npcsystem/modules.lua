@@ -135,7 +135,7 @@ if(Modules == nil) then
 		if(isPlayerPremiumCallback == nil or isPlayerPremiumCallback(cid) == true or parameters.premium == false) then
 			if(parameters.level ~= nil and getPlayerLevel(cid) < parameters.level) then
 				npcHandler:say('You must reach level ' .. parameters.level .. ' before I can let you go there.')
-			elseif isPzLocked(cid) then
+			elseif parameters.checkpzlock == true and isPzLocked(cid) then
 				npcHandler:say("Get out of there with this blood.")	
 			elseif(doPlayerRemoveMoney(cid, cost) ~= true) then
 				npcHandler:say('You do not have enough money!')
