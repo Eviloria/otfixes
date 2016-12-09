@@ -5,6 +5,7 @@ OPENED_TRAP = {462}
 DOWN_LADDER = {369, 370, 408, 409, 427, 428, 430, 924, 3135, 3136}
 JUNGLE_GRASS_TRANSFORM = {2782, 3985}
 JUNGLE_GRASS_REMOVE = {1499}
+POOLS = {2015, 2016, 2017, 2018, 2019, 2020, 2021, 2025, 2026, 2027, 2028, 2029, 2030}
 
 WATER = {490, 4608, 491, 492, 493, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627,
 628, 629, 4609, 4610, 4611, 4612, 4613, 4614, 4615, 4616, 4617, 4618, 4619, 4620, 4621,
@@ -77,7 +78,7 @@ function useRope(cid, item, frompos, item2, topos)
     local groundItem = getThingfromPos(newPos)
     if (isInArray(ROPE_SPOT, groundItem.itemid) ) then
         local newPos = {x = topos.x, y = topos.y, z = topos.z, stackpos = 1}
-        if getThingFromPos(newPos).itemid == 0 then
+        if getThingFromPos(newPos).itemid == 0 or isInArray(POOLS, getThingFromPos(newPos).itemid) then
             newPos.y = newPos.y + 1
             newPos.z = newPos.z - 1
             newPos.stackpos = 0
