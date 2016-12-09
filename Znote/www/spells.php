@@ -1,22 +1,28 @@
+<?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
+
 <h3>Spells</h3>
-<form action="/" method="get">
-	<input type="hidden" name="subtopic" value="spells">
+
+<?php
+if (isset($_GET['vocation'])) {
+	$type = $_GET['vocation'];
+} else {
+	$type = "all";
+}
+?>
+<form action="" method="get">
 	<table class="table">
-		<tbody><tr>
-			<th>Spell Search</th>
-			</tr>
-			<tr>
-				<td>
-					<label for="vocation">Vocation</label>
-					<select class="form-control" name="vocation" id="vocation">
-						<option value="all" checked="">All</option>
-						<option value="1"> Sorcerer</option>
-						<option value="2"> Druid</option>
-						<option value="3"> Paladin</option>
-						<option value="4"> Knight</option>
-					</select>
-				</td>
-			</tr>
+		<tbody>
+			<tr><th>Spell Search</th></tr>
+			<tr><td>
+				<label for="vocation">Vocation</label>
+				<select class="form-control" name="vocation" id="vocation">
+					<option value="all" <?php if ($type == "all") { echo "selected"; }?>>All</option>
+					<option value="1" <?php if ($type == "1") { echo "selected"; }?>> Sorcerer</option>
+					<option value="2" <?php if ($type == "2") { echo "selected"; }?>> Druid</option>
+					<option value="3" <?php if ($type == "3") { echo "selected"; }?>> Paladin</option>
+					<option value="4" <?php if ($type == "4") { echo "selected"; }?>> Knight</option>
+				</select>
+			</td></tr>
 			<tr>
 				<td><button class="btn btn-primary" type="submit">Filter</button></td>
 			</tr>
@@ -24,8 +30,7 @@
 	</table>
 </form>
 <?php
-if (isset($_GET['vocation'])) {
-	echo $_GET['vocation'] . ' chosen.';
-}
-echo $_GET['vocation'];
+echo $type;
 ?>
+
+<?php include 'layout/overall/footer.php'; ?>
