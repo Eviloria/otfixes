@@ -8,7 +8,7 @@
 	$config['site_title_context'] = 'Tibia as it should be. :3';
 
 	// Path to server folder without / Example: C:\Users\Alvaro\Documents\GitHub\forgottenserver
-	$config['server_path'] = ''; 
+	$config['server_path'] = 'D:\GitHub\kylskapapp'; 
 	
 
 	// ------------------------ \\
@@ -19,7 +19,7 @@
 	$config['sqlUser'] = 'root';
 
 	// phpmyadmin password for OT server:
-	$config['sqlPassword'] = '';
+	$config['sqlPassword'] = '256561Oli284953Oli';
 
 	// The database name to connect to. (This is usually same as username).
 	$config['sqlDatabase'] = 'eviloria';
@@ -315,7 +315,7 @@
 	// Do you need to have premium account to create a guild?
 	$config['guild_require_premium'] = false;
 
-	$config['guildwar_enabled'] = false;
+	$config['guildwar_enabled'] = true;
 
 	// Use htaccess rewrite? (basically this makes website.com/username work instead of website.com/characterprofile.php?name=username
 	// Linux users needs to enable mod_rewrite php extention to make it work properly, so set it to false if your lost and using Linux.
@@ -341,7 +341,7 @@
 		//'otland0',
 		//'otland1',
 		'256561',
-		''
+		'963741'
 	);
 
 	// Built-in FORUM
@@ -588,10 +588,10 @@
 	$config['shop_offers'] = array(
 		// offer 1
 		1 => array(
-			'type' => 2,
+			'type' => 1,
 			'itemid' => 2345, // Item to display on page
-			'count' => 30,
-			'describtion' => "Premium membership.",
+			'count' => 1,
+			'describtion' => "Premium Scroll 30 days.",
 			'points' => 70,
 
 		),

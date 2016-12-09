@@ -6,13 +6,13 @@ $tasks = [
 	1 => [
 		"img" => "rat",
 		"name" => "Rats",
-		"kills" => "10",
+		"kills" => "35",
 		"reward" => [
-			1 => "3300 Experience",
-			2 => "300 Gold Coins",
-			3 => "Brass Helmet",
-			4 => "Brass Armor",
-			5 => "Brass Legs"
+			1 => "2200 Experience",
+			2 => "400 Gold Coins",
+			3 => "",
+			4 => "",
+			5 => ""
 		],
 	],
 	2 => [

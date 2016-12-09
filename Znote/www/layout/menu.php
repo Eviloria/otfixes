@@ -5,6 +5,7 @@
 								<ul class="dropdown-menu">
 									<li><a href="onlinelist.php">Online</a></li>
 									<li><a href="highscores.php">Highscores</a></li>
+									<li><a href="powergamers.php">Power Gamers</a></li>
 									<li><a href="houses.php">Houses</a></li>
 									<li><a href="guilds.php">Guilds</a></li>
 									<li><a href="guildwar.php">Guild Wars</a></li>
