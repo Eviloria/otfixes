@@ -19,7 +19,7 @@
 	$config['sqlUser'] = 'root';
 
 	// phpmyadmin password for OT server:
-	$config['sqlPassword'] = '256561Oli284953Oli';
+	$config['sqlPassword'] = '';
 
 	// The database name to connect to. (This is usually same as username).
 	$config['sqlDatabase'] = 'eviloria';
@@ -340,8 +340,8 @@
 	$config['page_admin_access'] = array(
 		//'otland0',
 		//'otland1',
-		'256561',
-		'963741'
+		'',
+		''
 	);
 
 	// Built-in FORUM
