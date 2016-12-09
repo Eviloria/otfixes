@@ -5,9 +5,12 @@
 <?php 
 $limit = 25;
 $type = null;
-$type = $_GET['type'];
+if (isset($_GET['type')) {
+	$type = $_GET['type'];
+}
 function coloured_value($valuein)
 {
+	$value = '';
 	$value2 = $valuein;
 	while(strlen($value2) > 3)
 	{
