@@ -76,11 +76,11 @@ if ($scores) {
 	</form>
 	<table id="highscoresTable" class="table table-striped table-hover">
 		<tr class="yellow">
-			<td>Rank</td>
-			<td>Name</td>
-			<td>Vocation</td>
-			<td>Level</td>
-			<?php if ($type === 7) echo "<td>Points</td>"; ?>
+			<th>Rank</th>
+			<th>Name</th>
+			<th>Vocation</th>
+			<th>Level</th>
+			<?php if ($type === 7) echo "<th>Points</th>"; ?>
 		</tr>
 		<?php
 		for ($i = 0; $i < count($scores[$type]); $i++) {
