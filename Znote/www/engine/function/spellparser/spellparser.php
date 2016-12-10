@@ -4,7 +4,7 @@ $spells = simplexml_load_file($config['server_path'].'/data/spells/spells.xml');
 $spell_list = fopen('spell_list.txt', 'w');
 foreach ($spells->children() as $spell) {
 	if ($spell['words'] && $spell['name'] != NULL) {
-		fwrite($spell_list, $spell['words'].'@'.$item['name'].'@'.$spell['maglv'].'@'.$spell['mana'].PHP_EOL);
+		fwrite($spell_list, $spell['words'].'@'.$item['name'].'@'.$spell['maglv'].'@'.$spell['mana'].$spell['vocation'].PHP_EOL);
 	}
 }
 fclose($spell_list);
