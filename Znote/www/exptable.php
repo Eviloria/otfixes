@@ -3,8 +3,8 @@ level_to_experience
 <h3>Experience Table</h3>
 <?php
 $exp_table_config = [
-  'start_lvl' = 1,
-  'end_lvl' = 200,
+  'start_lvl' => 1,
+  'end_lvl' => 200,
 ];
 ?>
 <table class="table table-striped table-hover">
