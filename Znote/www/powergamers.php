@@ -5,7 +5,7 @@
 <?php 
 $limit = 25;
 $type = null;
-if (isset($_GET['type']) {
+if (isset($_GET['type'])) {
 	$type = $_GET['type'];
 }
 function coloured_value($valuein)
