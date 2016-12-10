@@ -35,7 +35,7 @@ foreach ($spells->children() as $spell) {
 				}
 			}
 		}
-		fwrite($spell_list, $spell['words'].'@'.$item['name'].'@'.$spell['maglv'].'@'.$spell['mana'].$voc[1].$voc[2].$voc[3].$voc[4].PHP_EOL);
+		fwrite($spell_list, $spell['words'].'@'.$item['name'].'@'.$spell['maglv'].'@'.$spell['mana'].'@'.$spell['vocation'].PHP_EOL);
 	}
 }
 fclose($spell_list);
