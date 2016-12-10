@@ -24,6 +24,7 @@ require 'function/users.php';
 require 'function/cache.php';
 require 'function/token.php';
 require 'function/itemparser/itemlistparser.php';
+require 'function/spellparser/spelllistparser.php';
 
 if (isset($_SESSION['token'])) {
 	$_SESSION['old_token'] = $_SESSION['token'];
