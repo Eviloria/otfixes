@@ -31,7 +31,10 @@ if (isset($_GET['vocation'])) {
 </form>
 <?php
 echo $type;
+?><br><?php
 var_dump(getSpellList());
+?><br><?php
+var_dump(returnServerSpells());
 ?>
 
 <?php include 'layout/overall/footer.php'; ?>
