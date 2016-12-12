@@ -94,7 +94,7 @@ if (isset($_GET['vocation'])) {
 	</table>
 </form>
 
-<table>
+<table class="table table-striped table-hover">
 	<tr>
 		<th>Spell Words</th>
 		<th>Spell Name</th>
@@ -115,7 +115,7 @@ if (isset($_GET['vocation'])) {
 	array_multisort($mlv, SORT_ASC, $spells);
 	
 	foreach ($spells as $sp) {
-		if ($type == "all" or $sp['voc'][$type]) {
+		if ($type == "all" or in_array($type, $sp['voc'])) {
 			echo '<tr>';
 			echo '<td>'.$sp['words'].'</td>';
 			echo '<td>'.$sp['name'].'</td>';
