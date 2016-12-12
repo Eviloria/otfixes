@@ -1,5 +1,5 @@
 <?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
-level_to_experience
+
 <h3>Experience Table</h3>
 <?php
 $exp_table_config = [
