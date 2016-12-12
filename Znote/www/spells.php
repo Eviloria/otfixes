@@ -29,7 +29,7 @@ $spells = [
 		"words" => "exiva \"pseudo",
 		"mana" => 20,
 		"ml" => 0,
-		"voc" => {1,2,3,4},
+		"voc" => [1,2,3,4],
 		"cost" => "80",
 	],
 	2 => [
@@ -37,7 +37,7 @@ $spells = [
 		"words" => "exevo gran mas vis",
 		"mana" => 800,
 		"ml" => 40,
-		"voc" => {1},
+		"voc" => [1],
 		"cost" => "8.000",
 		"promo" => "yes",
 	],
@@ -46,7 +46,7 @@ $spells = [
 		"words" => "adura vita",
 		"mana" => 100,
 		"ml" => 10,
-		"voc" => {2},
+		"voc" => [2],
 		"cost" => "2.000",
 	],
 	4 => [
@@ -54,7 +54,7 @@ $spells = [
 		"words" => "exevo con",
 		"mana" => 40,
 		"ml" => 2,
-		"voc" => {3},
+		"voc" => [3],
 		"cost" => "400",
 	],
 	5 => [
@@ -62,7 +62,7 @@ $spells = [
 		"words" => "exori",
 		"mana" => "4 * Level",
 		"ml" => 5,
-		"voc" => {4},
+		"voc" => [4],
 		"cost" => "5.000",
 	],
 ];
